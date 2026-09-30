@@ -370,7 +370,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 80339891-38aa-44ee-ba7e-251f1f456e32-1745761666924
-  [executable_action_instance:25b0ca65-b407-4976-bdd6-085e95df4259-1745763618944][action_type:openlink] = https://discord.lumy.fun
+  [executable_action_instance:25b0ca65-b407-4976-bdd6-085e95df4259-1745763618944][action_type:openlink] = https://discord.gg/yGMP8jKYEc
   [executable_block:80339891-38aa-44ee-ba7e-251f1f456e32-1745761666924][type:generic] = [executables:25b0ca65-b407-4976-bdd6-085e95df4259-1745763618944;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
