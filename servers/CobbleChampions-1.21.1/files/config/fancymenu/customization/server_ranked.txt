@@ -1,0 +1,329 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = server_ranked
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1789735302610
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:0c76a6ea-6acf-4a19-8107-ded29fd979b4-1789734859147] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  source = &6&lNELOU&f&lCOBBLEMON
+  source_mode = direct
+  shadow = true
+  scale = 1.4
+  base_color = #FFFFFFFF
+  enable_scrolling = false
+  interactable = false
+  element_type = text_v2
+  instance_identifier = server_ranked_title
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = top-centered
+  x = -120
+  y = 16
+  width = 240
+  height = 26
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_title_requirements
+  [loading_requirement_container_meta:server_ranked_title_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  source = &7Compétition
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #FFFFFFFF
+  enable_scrolling = false
+  interactable = false
+  element_type = text_v2
+  instance_identifier = server_ranked_subtitle
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = top-centered
+  x = -100
+  y = 44
+  width = 200
+  height = 14
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_subtitle_requirements
+  [loading_requirement_container_meta:server_ranked_subtitle_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_ranked_play_actions
+  [executable_action_instance:server_ranked_play_a0][action_type:sendmessage] = /ranked
+  [executable_block:server_ranked_play_actions][type:generic] = [executables:server_ranked_play_a0;]
+  description = &7Combats classés
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  is_template = false
+  template_share_with = buttons
+  element_type = custom_button
+  instance_identifier = server_ranked_play
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -80
+  y = -44
+  width = 160
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_play_requirements
+  [loading_requirement_container_meta:server_ranked_play_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  label = Jouer en Ranked
+}
+
+element {
+  button_element_executable_block_identifier = server_ranked_shop_actions
+  [executable_action_instance:server_ranked_shop_a0][action_type:sendmessage] = /rankedshop
+  [executable_block:server_ranked_shop_actions][type:generic] = [executables:server_ranked_shop_a0;]
+  description = &7Dépenser tes Ranked Coins
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  is_template = false
+  template_share_with = buttons
+  element_type = custom_button
+  instance_identifier = server_ranked_shop
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -80
+  y = -20
+  width = 160
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_shop_requirements
+  [loading_requirement_container_meta:server_ranked_shop_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  label = Boutique Ranked
+}
+
+element {
+  button_element_executable_block_identifier = server_ranked_coins_actions
+  [executable_action_instance:server_ranked_coins_a0][action_type:sendmessage] = /rankedcoins
+  [executable_action_instance:server_ranked_coins_a1][action_type:closegui] = 
+  [executable_block:server_ranked_coins_actions][type:generic] = [executables:server_ranked_coins_a0;server_ranked_coins_a1;]
+  description = &7Affiche ton solde dans le chat%n%&7(+4 par victoire, +1 par défaite)
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  is_template = false
+  template_share_with = buttons
+  element_type = custom_button
+  instance_identifier = server_ranked_coins
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -80
+  y = 4
+  width = 160
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_coins_requirements
+  [loading_requirement_container_meta:server_ranked_coins_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  label = Mes Ranked Coins
+}
+
+element {
+  button_element_executable_block_identifier = server_ranked_back_actions
+  [executable_action_instance:server_ranked_back_a0][action_type:opengui] = server_menu
+  [executable_block:server_ranked_back_actions][type:generic] = [executables:server_ranked_back_a0;]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  is_template = false
+  template_share_with = buttons
+  element_type = custom_button
+  instance_identifier = server_ranked_back
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -80
+  y = 42
+  width = 76
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_back_requirements
+  [loading_requirement_container_meta:server_ranked_back_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  label = « Retour
+}
+
+element {
+  button_element_executable_block_identifier = server_ranked_close_actions
+  [executable_action_instance:server_ranked_close_a0][action_type:closegui] = 
+  [executable_block:server_ranked_close_actions][type:generic] = [executables:server_ranked_close_a0;]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  is_template = false
+  template_share_with = buttons
+  element_type = custom_button
+  instance_identifier = server_ranked_close
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 4
+  y = 42
+  width = 76
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_ranked_close_requirements
+  [loading_requirement_container_meta:server_ranked_close_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  label = Fermer
+}

@@ -1,0 +1,239 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = server_warps
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1789731000000
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:server_warps_requirements] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  source = &6&lWARPS
+  source_mode = direct
+  shadow = true
+  scale = 1.4
+  base_color = #FFFFFFFF
+  element_type = text_v2
+  instance_identifier = server_warps_title
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = true
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = top-centered
+  x = -80
+  y = 18
+  width = 160
+  height = 24
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_title_requirements
+  [loading_requirement_container_meta:server_warps_title_requirements] = [groups:][instances:]
+  enable_parallax = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  source = &7Choisis ta destination
+  source_mode = direct
+  shadow = true
+  scale = 0.8
+  base_color = #FFFFFFFF
+  element_type = text_v2
+  instance_identifier = server_warps_subtitle
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = true
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = top-centered
+  x = -100
+  y = 48
+  width = 200
+  height = 18
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_subtitle_requirements
+  [loading_requirement_container_meta:server_warps_subtitle_requirements] = [groups:][instances:]
+  enable_parallax = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_warps_kanto_actions
+  [executable_action_instance:server_warps_kanto_command][action_type:sendmessage] = /kanto
+  [executable_block:server_warps_kanto_actions][type:generic] = [executables:server_warps_kanto_command;]
+  label =
+  description = &e&lKanto%n%&7Région de départ, toujours accessible.%n%&8Commande : &f/kanto
+  backgroundnormal = cobblemon:textures/item/poke_balls/poke_ball.png
+  backgroundhovered = cobblemon:textures/item/poke_balls/poke_ball.png
+  nine_slice_custom_background = false
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = server_warps_kanto
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -90
+  y = -20
+  width = 44
+  height = 44
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_kanto_requirements
+  [loading_requirement_container_meta:server_warps_kanto_requirements] = [groups:][instances:]
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_warps_johto_actions
+  [executable_action_instance:server_warps_johto_command][action_type:sendmessage] = /johto
+  [executable_block:server_warps_johto_actions][type:generic] = [executables:server_warps_johto_command;]
+  label =
+  description = &e&lJohto%n%&7Nécessite le rang &bJohto%n%&7(voir le menu Rangs)%n%&8Commande : &f/johto
+  backgroundnormal = cobblemon:textures/item/poke_balls/azure_ball.png
+  backgroundhovered = cobblemon:textures/item/poke_balls/azure_ball.png
+  nine_slice_custom_background = false
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = server_warps_johto
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -30
+  y = -20
+  width = 44
+  height = 44
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_johto_requirements
+  [loading_requirement_container_meta:server_warps_johto_requirements] = [groups:][instances:]
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_warps_hoenn_actions
+  [executable_action_instance:server_warps_hoenn_command][action_type:sendmessage] = /hoenn
+  [executable_block:server_warps_hoenn_actions][type:generic] = [executables:server_warps_hoenn_command;]
+  label =
+  description = &e&lHoenn%n%&7Nécessite le rang &bHoenn%n%&7(voir le menu Rangs)%n%&8Commande : &f/hoenn
+  backgroundnormal = cobblemon:textures/item/poke_balls/verdant_ball.png
+  backgroundhovered = cobblemon:textures/item/poke_balls/verdant_ball.png
+  nine_slice_custom_background = false
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = server_warps_hoenn
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -20
+  width = 44
+  height = 44
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_hoenn_requirements
+  [loading_requirement_container_meta:server_warps_hoenn_requirements] = [groups:][instances:]
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_warps_sinnoh_actions
+  [executable_action_instance:server_warps_sinnoh_command][action_type:sendmessage] = /sinnoh
+  [executable_block:server_warps_sinnoh_actions][type:generic] = [executables:server_warps_sinnoh_command;]
+  label =
+  description = &e&lSinnoh%n%&7Nécessite le rang &bSinnoh%n%&7(voir le menu Rangs)%n%&8Commande : &f/sinnoh
+  backgroundnormal = cobblemon:textures/item/poke_balls/citrine_ball.png
+  backgroundhovered = cobblemon:textures/item/poke_balls/citrine_ball.png
+  nine_slice_custom_background = false
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = server_warps_sinnoh
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 90
+  y = -20
+  width = 44
+  height = 44
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_sinnoh_requirements
+  [loading_requirement_container_meta:server_warps_sinnoh_requirements] = [groups:][instances:]
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = server_warps_back_actions
+  [executable_action_instance:server_warps_back_command][action_type:opengui] = server_menu
+  [executable_block:server_warps_back_actions][type:generic] = [executables:server_warps_back_command;]
+  label = Retour
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = server_warps_back
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  base_opacity = 1.0
+  auto_sizing = false
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -70
+  y = 78
+  width = 140
+  height = 24
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = server_warps_back_requirements
+  [loading_requirement_container_meta:server_warps_back_requirements] = [groups:][instances:]
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
