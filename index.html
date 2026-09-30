@@ -124,6 +124,17 @@
   }
   .btn-discord:hover { transform: translateY(-2px); }
   .small { margin-top: 16px; font-size: 0.9rem; color: var(--muted); }
+  .counter {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 22px; padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(7, 9, 15, 0.6);
+    border: 1px solid var(--line);
+    font-size: 0.98rem;
+  }
+  .counter[hidden] { display: none; }
+  .counter b { color: var(--yellow); font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+  .counter .dot { width: 8px; height: 8px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 10px #3ddc84; }
   .scroll-hint {
     position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
     color: var(--muted); font-size: 0.85rem; text-decoration: none;
@@ -262,6 +273,7 @@
       </a>
     </div>
     <p class="small">Windows 10 / 11 · Minecraft Java Edition requis · Gratuit</p>
+    <div class="counter" id="counter" hidden><span class="dot"></span><span>Déjà <b id="counter-value">0</b> dresseurs ont téléchargé le launcher</span></div>
   </div>
   <a class="scroll-hint" href="#installer">Comment installer ↓</a>
 </header>
@@ -353,5 +365,35 @@
   <p>Serveur non officiel, non affilié à Mojang, Microsoft, Nintendo ou The Pokémon Company.</p>
 </footer>
 
+<script>
+  // Compteur public : téléchargements de NelouCobblemon-Setup.exe sur GitHub (toutes versions).
+  // Masqué tant qu'il est sous MIN_SHOWN, pour ne pas afficher « 1 dresseur » au lancement.
+  (function () {
+    var MIN_SHOWN = 10;
+    fetch('https://api.github.com/repos/RemiL-Nel/neloucobblemon-launcher/releases?per_page=100')
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (releases) {
+        var total = 0;
+        releases.forEach(function (r) {
+          (r.assets || []).forEach(function (a) {
+            if (a.name === 'NelouCobblemon-Setup.exe') total += a.download_count;
+          });
+        });
+        if (total < MIN_SHOWN) return;
+        var box = document.getElementById('counter');
+        var out = document.getElementById('counter-value');
+        box.hidden = false;
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce) { out.textContent = total.toLocaleString('fr-FR'); return; }
+        var start = performance.now(), dur = 1200;
+        (function step(now) {
+          var k = Math.min(1, (now - start) / dur);
+          out.textContent = Math.round(total * (1 - Math.pow(1 - k, 3))).toLocaleString('fr-FR');
+          if (k < 1) requestAnimationFrame(step);
+        })(start);
+      })
+      .catch(function () { /* API indisponible : on n'affiche rien */ });
+  })();
+</script>
 </body>
 </html>
