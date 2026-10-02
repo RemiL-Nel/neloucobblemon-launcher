@@ -6,8 +6,8 @@ fov:0.25
 gamma:1.0
 guiScale:3
 maxFps:260
-renderDistance:8
-simulationDistance:9
+renderDistance:10
+simulationDistance:10
 screenEffectScale:0.65
 operatorItemsTab:true
 realmsNotifications:false
