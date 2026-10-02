@@ -16,10 +16,10 @@ layout_action_executable_blocks {
 }
 
 element {
-  source = &e&l1000 NelouCoins &r&f= &a&l10€ PayPal%n%&7pour soutenir le serveur !
+  source = &e&l1000 NelouCoins &r&f= &a&l10€ PayPal &7pour soutenir le serveur !
   source_mode = direct
   shadow = true
-  scale = 1.0
+  scale = 0.75
   base_color = #FFFFFFFF
   enable_scrolling = false
   auto_line_wrapping = false
@@ -35,11 +35,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   sticky_anchor = false
-  anchor_point = top-right
-  x = -215
-  y = 9
-  width = 195
-  height = 22
+  anchor_point = bottom-right
+  x = -250
+  y = -37
+  width = 245
+  height = 8
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
