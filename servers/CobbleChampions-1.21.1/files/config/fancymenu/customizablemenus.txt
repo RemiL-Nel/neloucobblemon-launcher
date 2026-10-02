@@ -9,3 +9,6 @@ net.minecraft.class_433 {
 net.minecraft.class_500 {
 }
 
+
+com.fredrickvonburger.trainerpass.gui.BattlePassScreen {
+}
