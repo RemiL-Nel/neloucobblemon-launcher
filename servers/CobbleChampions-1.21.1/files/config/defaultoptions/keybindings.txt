@@ -61,7 +61,7 @@ key_key.cobblemon.upshiftparty:key.keyboard.up
 key_key.cobblemon.throwpartypokemon:key.keyboard.r
 key_key.cobblemon.ridingfreelook:key.keyboard.left.alt
 key_key.cobblemon-battle-extras.battle_logs:key.keyboard.unknown
-key_key.cobblemon_smartphone.open:key.keyboard.grave.accent
+key_key.cobblemon_smartphone.open:key.keyboard.p
 key_key.cobblemon_smartphone.scanner:key.keyboard.right
 key_key.cobblemon_smartphone.quick_action_1:key.keyboard.unknown
 key_key.cobblemon_smartphone.quick_action_2:key.keyboard.unknown
