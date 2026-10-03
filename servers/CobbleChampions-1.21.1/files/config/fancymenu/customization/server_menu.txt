@@ -281,50 +281,6 @@ element {
 }
 
 element {
-  button_element_executable_block_identifier = server_menu_dex_actions
-  [executable_action_instance:server_menu_dex_a0][action_type:opengui] = server_dexrewards
-  [executable_block:server_menu_dex_actions][type:generic] = [executables:server_menu_dex_a0;]
-  description = &7Récompenses du Pokédex
-  restartbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  is_template = false
-  template_share_with = buttons
-  element_type = custom_button
-  instance_identifier = server_menu_dex
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -194
-  y = 8
-  width = 120
-  height = 20
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = server_menu_dex_requirements
-  [loading_requirement_container_meta:server_menu_dex_requirements] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  label = Dex Rewards
-}
-
-element {
   button_element_executable_block_identifier = server_menu_bp_actions
   [executable_action_instance:server_menu_bp_a0][action_type:sendmessage] = /bp
   [executable_block:server_menu_bp_actions][type:generic] = [executables:server_menu_bp_a0;]
