@@ -71,7 +71,7 @@ attackIndicator:1
 tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
-glDebugVerbosity:1
+glDebugVerbosity:0
 skipMultiplayerWarning:true
 hideMatchedNames:true
 joinedFirstServer:true
